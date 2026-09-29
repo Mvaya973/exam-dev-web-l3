@@ -10,6 +10,7 @@ class Event extends Model
         'title',
         'description',
         'event_date',
+        'location',
     ];
 
     protected function casts(): array

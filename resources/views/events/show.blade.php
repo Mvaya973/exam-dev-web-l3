@@ -18,6 +18,19 @@
             <p class="lead mt-4">
                 {{ $event->description }}
             </p>
+
+            @if ($event->location)
+                <p class="mb-0"><strong>Lieu :</strong> {{ $event->location }}</p>
+            @endif
+
+            <div class="d-flex flex-wrap gap-2 mt-4">
+                <a href="{{ route('events.edit', $event) }}" class="btn btn-primary">Modifier</a>
+                <form action="{{ route('events.destroy', $event) }}" method="POST" onsubmit="return confirm('Supprimer cet événement ?')">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-outline-danger">Supprimer</button>
+                </form>
+            </div>
         </div>
     </article>
 @endsection

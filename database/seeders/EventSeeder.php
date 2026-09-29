@@ -10,26 +10,26 @@ class EventSeeder extends Seeder
     public function run(): void
     {
         Event::create([
-            'title' => 'Forum des métiers du numérique',
-            'description' => 'Rencontre avec des professionnels du développement, de la cybersécurité et de la data.',
+            'title' => 'test1',
+            'description' => 'test',
             'event_date' => '2026-10-08',
         ]);
 
         Event::create([
-            'title' => 'Hackathon étudiant',
-            'description' => 'Développement en équipe d’une application web autour d’un sujet imposé.',
+            'title' => 'test2',
+            'description' => 'test',
             'event_date' => '2026-10-22',
         ]);
 
         Event::create([
-            'title' => 'Conférence Laravel',
-            'description' => 'Présentation de bonnes pratiques pour structurer une application Laravel.',
+            'title' => 'test3',
+            'description' => 'test',
             'event_date' => '2026-11-05',
         ]);
 
         Event::create([
-            'title' => 'Soirée jeux',
-            'description' => 'Moment convivial ouvert aux étudiants de la licence informatique.',
+            'title' => 'test4',
+            'description' => 'test',
             'event_date' => '2026-11-19',
         ]);
     }
